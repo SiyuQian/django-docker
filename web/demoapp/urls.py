@@ -5,6 +5,7 @@ app_name = 'demoapp'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('neurokit/', views.neurokit_index, name="neurokit_index"),
     path('celery/', views.celery_index, name='celery_index'),
     path('celery/random_add/', views.random_add, name='celery_random_add'),
     path('celery/random_mul/', views.random_mul, name='celery_random_mul'),
